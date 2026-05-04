@@ -1,0 +1,131 @@
+/* 當你想為某一個區塊或方塊，增加背景，請在該區塊/方塊上增加class名稱
+例如：
+
+在HTML裡：
+<div class="abc">我要增加背景</div> 
+
+在css裡：
+.abc{
+    background-image: url(../images/body_bg.webp);  <------圖檔位置
+    background-position: center; <-----圖片在區塊/方塊裡的定位
+    background-size: cover;  <-----圖片在區塊/方塊裡的大小
+}
+
+ */
+
+/* 補充 
+    學習資料
+    https://ithelp.ithome.com.tw/articles/10223887
+    https://ithelp.ithome.com.tw/articles/10224214
+*/
+
+
+
+/* 全站背景 */
+body {
+    /* background-image: url(../images/body_bg.webp); */
+    background-color: #F8F4E8;
+    background-position: center;
+    background-size: 2400px;
+}
+
+main {
+    background-image: url(../images/topBn_bgrepeat.webp);
+    background-size: 100% 100%;
+    overflow: hidden;
+    background-position: top center;
+    position: relative;
+    background-repeat: repeat-x;
+}
+
+
+/* 按鈕顏色 */
+.btnset a {
+    color: #f5fe00;
+    border: 3px solid #f5fe00;
+    background-color: #2a2a2a;
+    box-shadow: 3px 5px #f5fe00;
+    line-height: 1.2;
+}/*來去逛逛*/
+
+.btnset a:hover {
+/*    color: rgb(44, 40, 1);*/
+    color:#fff;
+    border: 3px solid #ffd392;
+    background-color: #CA141D;
+    box-shadow: 3px 5px #8d6e40;
+}/*來去逛逛滑鼠移入*/
+
+.nocarslideinnBox01 {
+    background-color: #084B7D;
+    padding: 10px;
+}
+
+/* 原價特價折疊控制 打開變1列 關掉變2列 */
+.productSetprice .priceBox{
+    flex-direction: row !important;
+}
+
+/* logo區圖片大小控制 */
+.logooutbox .logoinn{
+    flex-basis: 11%;
+}
+.swiperCover .swiper-slide-next, .swiperCover .swiper-slide-last{
+    opacity: .5;}
+    
+/* .swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right{
+    background-image: none;
+} */
+
+/* 其他東西自己寫這↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+
+.squarepppinfoinn-box.pppinfobox{
+    background: #075F9E;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* 斷點區 */
+
+@media screen and (max-width: 1659px){
+    
+}
+@media screen and (max-width: 1399px){
+    
+}
+@media screen and (max-width: 1199px){
+    
+}
+
+@media screen and (max-width: 991px){
+    
+}
+
+@media screen and (max-width: 767px){
+    .actablebox{
+        font-size: 14px;
+    }
+    .actablebox th.table-title{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .logooutbox .logoinn{
+        flex-basis: 24%;
+    }
+
+    .tag_link a{
+        width: 22%;
+        display: inline-block;
+    }
+
+    .tag_link a img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+}
