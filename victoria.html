@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Victoria's Secret</title>
+<link href="bra-layout.css" rel="stylesheet" />
+<link href="banner.css" rel="stylesheet" />
+<link href="nav.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script>
+$(function(){
+    $("#top").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:0
+        },800);
+    });
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 200){
+            $('#top').fadeIn("fast");
+        } else {
+            $('#top').stop().fadeOut("fast");
+        }
+    });
+	 $("#hito").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:1388
+        },800);
+    });
+	$("#newpro").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:2168
+        },800);
+    });
+	$("#victoria").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:2947
+        },800);
+    });
+	$("#brand").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:3727
+        },800);
+    });
+	$("#sexy").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:4506
+        },800);
+    });
+});
+$(function(){
+  	$("#ad01").hover(function(){
+    	$("#hover01").stop().fadeToggle(300);
+		return false;
+  	});
+	$("#ad02").hover(function(){
+    	$("#hover02").stop().fadeToggle(300);
+		return false;
+  	});
+	$("#ad03").hover(function(){
+    	$("#hover03").stop().fadeToggle(300);
+		return false;
+  	});
+	$("#ad05").hover(function(){
+    	$("#hover05").stop().fadeToggle(300);
+		return false;
+  	});
+	$("#ad06").hover(function(){
+    	$("#hover06").stop().fadeToggle(300);
+		return false;
+  	});
+	$("#ad07").hover(function(){
+    	$("#hover07").stop().fadeToggle(300);
+		return false;
+  	});
+});
+/*menu*/
+/*$(document).ready(function() {
+    $("#hito").hover(function() {
+        $(this).toggleClass("active");
+        $(".nav").stop().slideToggle();
+    });
+    $(".nav > ul > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
+});*/
+</script>
+</head>
+
+<body>
+	<div id="top"></div>
+    <header>
+    	<div class="logo">Victoria's Secret</div>
+        <ul>
+        	<li id="hito">人氣商品
+            	<nav class="nav">
+                <ul>
+                    <li><a href="">人氣商品1</a></li>
+                    <li><a href="">人氣商品2</a></li>
+                    <li><a href="">人氣商品3</a></li>    
+                </ul>
+            	</nav>
+            </li>
+            <li id="newpro">新品上架
+            	<nav class="nav2">
+                <ul>
+                    <li><a href="">新品上架1</a></li>
+                    <li><a href="">新品上架2</a></li>
+                    <li><a href="">新品上架3</a></li>    
+                </ul>
+            	</nav>
+            </li>
+            <li style="margin:0 12px;" id="victoria">維多莉雅獨家
+            	<nav class="nav3">
+                <ul>
+                    <li><a href="">維多莉雅1</a></li>
+                    <li><a href="">維多莉雅2</a></li>
+                    <li><a href="">維多莉雅3</a></li>    
+                </ul>
+            	</nav>
+            </li>
+            <li id="brand">品牌專區
+            	<nav class="nav4">
+                <ul>
+                    <li><a href="">品牌專區1</a></li>
+                    <li><a href="">品牌專區2</a></li>
+                    <li><a href="">品牌專區3</a></li>    
+                </ul>
+            	</nav>
+            </li>
+            <li id="sexy">性感挑逗
+            	<nav class="nav5">
+                <ul>
+                    <li><a href="">性感挑逗1</a></li>
+                    <li><a href="">性感挑逗2</a></li>
+                    <li><a href="">性感挑逗3</a></li>    
+                </ul>
+            	</nav>
+            </li>
+        </ul> 
+        <span id="account"></span>
+    </header>
+	<span id="hover01"><img src="images/hover.png"></span>
+    <span id="hover02"><img src="images/hover2.png"></span>
+    <span id="hover03"><img src="images/hover.png"></span>
+    <span id="hover05"><img src="images/hover.png"></span>
+    <span id="hover06"><img src="images/hover2.png"></span>
+    <span id="hover07"><img src="images/hover.png"></span>
+    <div style="height:100%;">
+            <div class="ad01" id="ad01"></div>
+            </div>
+            <ul>
+                <li class="ad02" id="ad02"></li>
+            </ul>
+            <div class="ad03" id="ad03"></div>
+            <ul>
+                <li class="ad04" id="ad04"></li>
+            </ul>
+            <div class="ad05" id="ad05"></div>
+            <ul>
+                <li class="ad06" id="ad06"></li>
+            </ul>
+            <div class="ad07" id="ad07"></div>
+            <ul>
+                <li class="ad08" id="ad08"></li>
+            </ul>
+    </div>
+    <div id="abgneBlock">
+    	<ul class="list">
+            <li><img src="images/01.jpg"></li>
+            <li><img src="images/02.jpg"></li>
+            <li><img src="images/03.jpg"></li>
+    	</ul>
+    </div>
+    <div style="height:20%;width:45%;background-color:#999999;margin:0.6% 0 0 5%;float:left;"><img src="images/ad6.jpg"></div>
+    <div style="height:20%;width:45%;background-color:#CCCCCC;margin:0.6% 4% 0 0;float:right;"><img src="images/ad7.jpg"></div>
+    <div style="clear:both;"></div>
+    <h2>
+    	人氣商品
+        <span style="float:right;">更多...</span>
+    </h2>
+    <!--<div class="product">-->
+            <div class="pro">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+    <!--</div>-->
+	<div style="clear:both;"></div>
+    <h2>
+    	新品上架
+        <span style="float:right;">更多...</span>
+    </h2>
+    <!--<div class="product">-->
+           <div class="pro">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+    <!--</div>-->
+	<div style="clear:both;"></div>
+    <h2>
+    	維多莉雅獨家
+    	<span style="float:right;">更多...</span>
+    </h2>
+            <div class="pro">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+	<div style="clear:both;"></div>
+    <h2>
+    	品牌專區
+        <span style="float:right;">更多...</span>
+    </h2>
+            <div class="pro">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+	<div style="clear:both;"></div>
+    <h2>
+    	性感挑逗
+    	<span style="float:right;">更多...</span>
+    </h2>
+            <div class="pro">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+            <div class="pro2">
+            	<span class="go"><img src="images/go.png"></span>
+                <span class="shopcar"><img src="images/shopcar.png"></span>
+            </div>
+   	<span id="pre"><img src="images/previous.png"></span>
+    <span id="next"><img src="images/next2.png"></span>
+    <div style="clear:both;"></div>
+    <div class="inf">
+    	<ul>> 關於我們
+        	<li>品牌故事</li>
+        	<li>商店簡介</li>
+            <li>隱私權聲明</li>
+        </ul>
+        <ul>> 購物說明
+        	<li>付款方式</li>
+        	<li>運送方式</li>
+            <li>退換貨方式</li>
+        </ul>
+        <ul>> 客服資訊
+        	<li>客服留言</li>
+        	<li>常見問題</li>
+        </ul>
+        <ul>> 我的帳戶
+        	<li>訂單查詢</li>
+        	<li>收藏商品</li>
+        </ul>
+    <span class="fb"><img src="images/fb.png"></span>
+    <span class="fb"><img src="images/twitter.png"></span>
+    <span class="fb"><img src="images/instagram.png"></span>
+    <p>2015 &copy; Ayong Ltd. 圖片資料來源 愛桃子有限公司 Powered by Ayong</p>
+    <span id="qrcode"><img src="images/qrcode.png"></span>
+    </div>
+	
+</body>
+</html>

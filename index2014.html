@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+<title>Ayong</title>
+<link href="layout.css" rel="stylesheet" type="text/css" />
+<link href="css/banner.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+<script type="text/javascript" src="js/slidepage.js"></script>
+<script type="text/javascript" src="js/fadepage.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#top").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:0
+        },800);
+    });
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 200){
+            $('#top').fadeIn("fast");
+        } else {
+            $('#top').stop().fadeOut("fast");
+        }
+    });
+});
+$(function(){
+    $("#aboutme,#aboutme2").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:890
+        },800);
+    });
+	$("#web,#web2,#next").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:1605
+        },800);
+    });
+	$("#graphic,#next2").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:2500
+        },800);
+    });
+});
+</script>
+</head>
+
+<body>
+	<div id="top"></div>
+	<div id="bgtop"></div>
+        <div id="web_box" class="web_box">
+    	   <div id="exit01" class="exit"></div>
+            <div class="webin"></div>
+        </div>
+     	<div id="graa_box">
+            <div id="exit02" class="exit"></div>
+            <div id="navl" class="navl"></div>
+            <div id="graout">
+                <div class="grain"><img src="image/g01.jpg" name="graa1" id="graa1"></div>
+                <div class="grain"><img src="image/g02.jpg" name="graa2" id="graa2"></div>
+            </div>
+            <div id="navr" class="navr"></div>   
+        </div>
+        <div id="grab_box">
+            <div id="exit03" class="exit"></div>
+            <div id="navl2" class="navl"></div>
+            <div id="graout2">
+                <div class="grain"><img src="image/g09.jpg" name="graa3" id="graa3"></div>
+                <div class="grain"><img src="image/g08.jpg" name="graa4" id="graa4"></div>
+            </div>
+            <div id="navr2" class="navr"></div>   
+        </div>
+        <div id="grac_box">
+            <div id="exit04" class="exit"></div>
+            <div id="navl3" class="navl"></div>
+            <div id="graout3">
+                <div class="grain"><img src="image/mrt.gif" width="675" height="475" name="graa5" id="graa5"></div>
+                <div class="grain"><img src="image/g05.jpg" name="graa6" id="graa6"></div>
+            </div>
+            <div id="navr3" class="navr"></div>   
+        </div>
+        <div id="grad_box">
+            <div id="exit05" class="exit"></div>
+            <div id="navl4" class="navl"></div>
+            <div id="graout4">
+                <div class="grain"><img src="image/g06.jpg" name="graa7" id="graa7"></div>
+                <div class="grain"><img src="image/g07.jpg" name="graa8" id="graa8"></div>
+            </div>
+            <div id="navr4" class="navr"></div>   
+        </div>
+        <div class="header">
+        	<div class="title"><a href="index.html"><img src="image/title2.png"></a></div>
+        	<div class="clear"></div>
+        </div>
+    	<div class="contente">
+            <div class="menu">
+            	<div id="aboutme"></div>
+                <div id="web"></div>
+                <div id="graphic"></div>
+        	</div>
+        <div id="abgneBlock">
+			<ul class="list">
+				<li><img src="image/01.jpg"></li>
+				<li><img src="image/02.jpg"></li>
+				<li><img src="image/03.jpg"></li>
+			</ul>
+		</div>
+            
+    </div>
+            
+    	<div class="contentd">
+    		<div id="next"></div>
+            <ul>
+                <li>林佳勇</li>
+                <li>七年級生</li>
+                <li>身高178公分</li>
+                <li>體重60公斤</li>
+                <li>明志科技大學視覺傳達設計系畢</li>
+                <li>目前在3C通路業任職視覺設計師</li>
+                <li>
+                    技能工具：<br/>
+                    AI&nbsp;&nbsp;PS&nbsp;&nbsp;DW&nbsp;&nbsp;Sublime Text&nbsp;&nbsp;HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;RWD&nbsp;&nbsp;Bootstrap&nbsp;&nbsp;JQ&nbsp;&nbsp;平面設計&nbsp;&nbsp;網頁設計
+                </li>
+            </ul>
+    	</div>   
+		<div class="contenta">
+        	<div id="paper">
+            <div style="height:41px;width:280px;float:left;margin:0 0 0 100px;"><img src="image/topweb.png"></div>
+            </div>
+            <div id="weba"><img src="image/web.png"></div>
+            <div id="webb"><a href="http://www.elifemall.com.tw/newweb/lg/index.php" target="_blank"><img src="image/web2.png"></a></div>
+            <div id="webc"><a href="http://www.elifemall.com.tw/event/2016/createday/index.php" target="_blank"><img src="image/web3.png"></a></div>
+        	<div id="webd"><a href="boutiuque.html" target="_blank"><img src="image/web4.png"></a></div>
+            <div id="drawing">
+            	<div id="next2"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="contentb">
+        	<div style="height:41px;width:280px;float:left;margin:28px 0 0 100px;"><img src="image/topgra.png"></div>
+            <div id="graa"><a><img src="image/gra.png"></a></div>
+            <div id="grab"><a><img src="image/gra2.png"></a></div>
+            <div id="grac"><a><img src="image/gra3.png"></a></div>
+            <div id="grad"><a><img src="image/gra4.png"></a></div>
+        	<div id="drawing2"></div>
+            <div id="contentdown"></div>
+        </div>
+		<div class="footer">
+        <div style="height:23px;"></div>
+        <div style="width:580px;margin:auto 0px auto 60px;">
+            <ul>
+                <li id="aboutme2" style="cursor:pointer;">about me</li>
+                <li id="web2" style="cursor:pointer;">web</li>
+                <li style="cursor:pointer;">graphic</li>
+            </ul>
+            <div id="mail">lin09156265@gmail.com</div>
+            <span style="float:right;">Copyright&copy;2014 Design by Ayong.</span>
+        </div>
+  </div>
+</body>
+</html>
